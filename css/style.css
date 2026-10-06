@@ -6,11 +6,26 @@
 
 body {
     margin: 0;
-    font-family: system-ui, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Arial, sans-serif;
+
     font-size: 1rem;
     line-height: 1.5;
-    color: #29231d;
-    background-color: #f4f6ee;
+
+    color: #243224;
+    background-color: #f3f6ef;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
 }
 
 header {
@@ -18,16 +33,16 @@ header {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
-    background-color: #526b3f;
-    color: #ffffff;
+
     padding: 1.5rem;
-    border-bottom: 4px solid #795548;
+
+    background-color: #78966b;
+    border-bottom: 4px solid #9a684d;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2rem;
-    color: #ffffff;
+    color: #182218;
 }
 
 nav {
@@ -38,20 +53,26 @@ nav {
 
 nav a {
     display: inline-block;
+
     padding: 8px 14px;
+
     color: #ffffff;
-    background-color: #668550;
+    background-color: #58744e;
+
     border-radius: 5px;
+
     text-decoration: none;
+    font-weight: 600;
+
     transition: background-color 0.2s;
 }
 
 nav a:hover {
-    background-color: #455c35;
+    background-color: #496441;
 }
 
 nav a:active {
-    background-color: #29231d;
+    background-color: #754c38;
 }
 
 main {
@@ -67,7 +88,8 @@ section {
 section h2 {
     margin-top: 0;
     margin-bottom: 1rem;
-    color: #526b3f;
+
+    color: #2f4528;
 }
 
 img {
@@ -78,8 +100,12 @@ img {
 #map img {
     display: block;
     width: 100%;
+
     padding: 10px;
-    border: 2px solid #795548;
+
+    border: 2px solid #9a684d;
+    border-radius: 8px;
+
     background-color: #ffffff;
 }
 
@@ -91,15 +117,25 @@ img {
 
 article {
     padding: 1rem;
-    border: 1px solid #a89f91;
+
+    border: 1px solid #9fbc94;
+    border-left: 5px solid #c47745;
     border-radius: 8px;
-    background-color: #ffffff;
+
+    background-color: #cfe2c7;
+
+    transition: background-color 0.2s;
+}
+
+article:hover {
+    background-color: #bdd7b4;
 }
 
 article h3 {
     margin-top: 0;
     margin-bottom: 0.5rem;
-    color: #526b3f;
+
+    color: #21371d;
 }
 
 article p {
@@ -109,38 +145,67 @@ article p {
 
 .difficulty {
     display: inline-block;
+
     padding: 4px 10px;
+
     border-radius: 12px;
+
     font-size: 0.9rem;
     font-weight: 600;
 }
 
 .easy {
-    background-color: #79b165;
-    color: #ffffff;
+    background-color: #a9d69b;
+    color: #1f3c1d;
 }
 
 .medium {
-    background-color: #feda6d;
-    color: #29231d;
+    background-color: #ead277;
+    color: #413719;
 }
 
 .hard {
-    background-color: #e25f5f;
-    color: #ffffff;
+    background-color: #df8e83;
+    color: #48241f;
 }
+
+.route-length {
+    margin: 0.5rem 0;
+}
+
+.route-length span {
+    font-size: 1.3rem;
+    font-weight: 700;
+
+    color: #754c38;
+}
+
+/*
+Для створення активного та енергійного вигляду використано зелений
+як основний колір інтерфейсу та помаранчевий як додатковий акцент.
+Зелений підкреслює природну тематику веломаршрутів, а теплий помаранчевий
+додає дизайну енергійності. Світлий нейтрально-зелений фон зберігає
+інтерфейс легким для сприйняття та не перевантажує сторінку.
+*/
 
 #details {
     max-width: 968px;
+
     margin: 0 auto 2rem;
     padding: 1rem;
-    border: 2px solid #795548;
-    background-color: #eef1e6;
+
+    border: 2px solid #9a684d;
+    border-left: 5px solid #c47745;
+    border-radius: 8px;
+
+    background-color: #cfe2c7;
 }
 
 #details h2 {
     margin-top: 0;
-    color: #526b3f;
+    margin-bottom: 1rem;
+
+    color: #34532f;
 }
 
 #details p {
@@ -150,8 +215,10 @@ article p {
 
 footer {
     padding: 1rem;
-    background-color: #29231d;
-    color: #d8d8d8;
+
+    background-color: #60493c;
+    color: #ffffff;
+
     text-align: center;
     font-size: 0.9rem;
 }
@@ -182,9 +249,11 @@ footer p {
 @media (min-width: 1024px) {
     main {
         max-width: 1200px;
+
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 2rem;
+
         padding: 3rem 2rem;
     }
 
