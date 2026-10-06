@@ -14,6 +14,10 @@ body {
 }
 
 header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
     background-color: #526b3f;
     color: #ffffff;
     padding: 1.5rem;
@@ -21,20 +25,33 @@ header {
 }
 
 header h1 {
-    margin-top: 0;
-    margin-bottom: 1rem;
+    margin: 0;
     font-size: 2rem;
     color: #ffffff;
 }
 
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
 nav a {
+    display: inline-block;
+    padding: 8px 14px;
     color: #ffffff;
+    background-color: #668550;
+    border-radius: 5px;
     text-decoration: none;
-    margin-right: 1.5rem;
+    transition: background-color 0.2s;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    background-color: #455c35;
+}
+
+nav a:active {
+    background-color: #29231d;
 }
 
 main {
@@ -53,18 +70,27 @@ section h2 {
     color: #526b3f;
 }
 
-#map img {
-    display: block;
+img {
     max-width: 100%;
     height: auto;
+}
+
+#map img {
+    display: block;
+    width: 100%;
     padding: 10px;
     border: 2px solid #795548;
     background-color: #ffffff;
 }
 
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
 article {
     padding: 1rem;
-    margin-bottom: 1rem;
     border: 1px solid #a89f91;
     border-radius: 8px;
     background-color: #ffffff;
@@ -105,8 +131,9 @@ article p {
 }
 
 #details {
+    max-width: 968px;
+    margin: 0 auto 2rem;
     padding: 1rem;
-    margin-bottom: 2rem;
     border: 2px solid #795548;
     background-color: #eef1e6;
 }
@@ -131,4 +158,46 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+@media (min-width: 600px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+        padding: 3rem 2rem;
+    }
+
+    section {
+        margin-bottom: 0;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    #details {
+        max-width: 1136px;
+    }
 }
