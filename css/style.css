@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #29231d;
+    background-color: #f4f6ee;
+}
+
+header {
+    background-color: #526b3f;
+    color: #ffffff;
+    padding: 1.5rem;
+    border-bottom: 4px solid #795548;
+}
+
+header h1 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 1.5rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #526b3f;
+}
+
+#map img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+    border: 2px solid #795548;
+    background-color: #ffffff;
+}
+
+article {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #a89f91;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+article h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #526b3f;
+}
+
+article p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.difficulty {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.easy {
+    background-color: #79b165;
+    color: #ffffff;
+}
+
+.medium {
+    background-color: #feda6d;
+    color: #29231d;
+}
+
+.hard {
+    background-color: #e25f5f;
+    color: #ffffff;
+}
+
+#details {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: 2px solid #795548;
+    background-color: #eef1e6;
+}
+
+#details h2 {
+    margin-top: 0;
+    color: #526b3f;
+}
+
+#details p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    padding: 1rem;
+    background-color: #29231d;
+    color: #d8d8d8;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
